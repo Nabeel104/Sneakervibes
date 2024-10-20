@@ -1,0 +1,125 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow for modern look */
+  position: sticky;
+  top: 9;
+  z-index: 100;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Logo */
+.navbar-logo-link {
+  text-decoration: none;
+}
+
+.logo-image {
+  width: 200px; /* Adjusted for a bigger, more balanced look */
+  transition: transform 0.3s ease; /* Logo hover animation */
+}
+
+.logo-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Navbar Menu */
+.navbar-menu {
+  flex-grow: 1;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Wider gap for a more spacious layout */
+  justify-content: center;
+}
+
+.navbar-item {
+  margin: 0;
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-size: 20px; /* Larger font for better readability */
+  color: #333;
+  padding: 10px 20px; /* Increased padding for a more prominent clickable area */
+  border-radius: 5px; /* More rounded corners for modern design */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: #ff4500;
+  background-color: rgba(255, 69, 0, 0.2); /* Stronger hover background */
+}
+
+/* Navbar Icons (Login & Cart) */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar-icon-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navbar-icon-link:hover {
+  color: #ff4500;
+}
+
+.icon {
+  width: 40px; /* Reduced icon size for sleeker design */
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Slight zoom for interactive feel */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-list {
+    gap: 20px; /* Reduced gap for smaller screens */
+  }
+  
+  .navbar-link {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-image {
+    width: 140px; /* Smaller logo on mobile */
+  }
+
+  .navbar-list {
+    flex-direction: column; /* Stack the items vertically */
+    gap: 10px;
+  }
+
+  .navbar-link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+}

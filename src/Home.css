@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.home-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Banner Section */
+.banner {
+  background-image: url('hompag.png'); /* Add your banner image */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 150px 20px;
+  color: white;
+  position: relative;
+  border-radius: 12px;
+  margin-bottom: 50px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Darker overlay for readability */
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner h1 {
+  font-size: 60px;
+  margin: 20px 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.banner p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.shop-now-button {
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.shop-now-button:hover {
+  background-color: #ff4500;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Shoes Listing Section */
+.shoes-section {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.shoes-section h2 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: #ff6347;
+  font-weight: bold;
+  position: relative;
+}
+
+.shoes-section h2::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 5px;
+  background-color: #db4329;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+/* Shoes Grid */
+.shoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 50px;
+  padding: 0 20px;
+}
+
+/* Shoe Card Styles */
+.shoe-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shoe-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.shoe-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  transition: transform 0.3s ease;
+}
+
+.shoe-card:hover .shoe-image {
+  transform: scale(1.08);
+}
+
+.shoe-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.shoe-card p {
+  font-size: 20px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  .banner p {
+    font-size: 18px;
+  }
+
+  .shop-now-button {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  .shoes-section h2 {
+    font-size: 36px;
+  }
+
+  .shoes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 28px;
+  }
+
+  .banner p {
+    font-size: 16px;
+  }
+
+  .shop-now-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .shoes-section h2 {
+    font-size: 30px;
+  }
+
+  .shoes-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,74 @@
+/* Auth.css */
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    background-color: #f8f9fa; /* Light gray background for contrast */
+}
+
+.auth-form {
+    background-color: #fff; /* White background for the form */
+    padding: 30px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 400px; /* Maximum width of the form */
+    width: 100%; /* Full width up to the max */
+}
+
+.auth-title {
+    text-align: center; /* Centered title */
+    margin-bottom: 20px; /* Space below title */
+    font-size: 24px; /* Large font for title */
+    color: #ff0004; /* Primary color for title */
+}
+
+.auth-field {
+    margin-bottom: 15px; /* Space below each field */
+}
+
+.auth-field label {
+    display: block; /* Block display for labels */
+    font-size: 14px; /* Font size for labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: #555; /* Dark gray color for labels */
+}
+
+.auth-field input {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ddd; /* Light border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 14px; /* Font size for input text */
+}
+
+.auth-button {
+    width: 100%; /* Full width for button */
+    padding: 10px; /* Padding inside button */
+    background-color: #ff0004; /* Primary color for button */
+    color: #fff; /* White text for button */
+    font-size: 16px; /* Font size for button text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor for button */
+}
+
+.auth-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.auth-footer {
+    text-align: center; /* Centered footer text */
+    margin-top: 15px; /* Space above footer */
+    font-size: 14px; /* Font size for footer text */
+}
+
+.auth-footer a {
+    color: #ff0000; /* Link color */
+    text-decoration: none; /* No underline for links */
+}
+
+.auth-footer a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
